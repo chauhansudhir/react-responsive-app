@@ -1,0 +1,75 @@
+td.location img {
+  height: 50px;
+}
+
+td .category {
+  border: 2px solid;
+  padding: 5px;
+  text-align: center;
+}
+
+td .category.Food {
+  color: #eeb50c;
+}
+
+td .category.Technology {
+  --color: rgb(182, 173, 173);
+  color: var(--color);
+  border-color: var(--color);
+}
+
+td .category.Entertainment {
+  color: rgb(1, 95, 124);
+}
+
+td .category.Shopping {
+  color: rgb(4, 132, 4);
+}
+
+td .category.Automotive {
+  color: rgb(179, 58, 30);
+}
+
+td .category.Travel {
+  color: rgb(99, 22, 181);
+}
+
+td.price {
+  font-weight: 900;
+}
+
+@media (max-width: 768px) or (max-height: 500px) {
+  .mobile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .mobile-card {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 320px;
+  }
+
+  .location img {
+    height: auto;
+    width: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+  }
+  .stack-h.location {
+    align-items: center;
+  }
+  .title-row {
+    justify-content: space-between;
+    font-weight: 900;
+    align-items: center;
+    text-transform: capitalize;
+  }
+  .desc {
+    width: 80%;
+  }
+}
